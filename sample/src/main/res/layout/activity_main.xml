@@ -31,7 +31,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="TextAppearance test"
-		android:textAppearance="@style/textStyle" />
+		android:textAppearance="@style/textStyleWithFont" />
 
 	<TextView
 		android:layout_width="wrap_content"

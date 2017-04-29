@@ -8,7 +8,7 @@
 		<item name="colorAccent">@color/colorAccent</item>
 	</style>
 
-	<style name="textStyle" parent="@style/Base.TextAppearance.AppCompat.Medium">
+	<style name="textStyleWithFont" parent="@style/Base.TextAppearance.AppCompat.Medium">
 		<item name="font">fonts/eutemia.ttf</item>
 	</style>
 
