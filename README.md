@@ -12,46 +12,46 @@ Setup
 ========
 _TODO_
 
-```android
-    public class MainActivity extends AppCompatActivity {
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-        }
-    
-        @Override
-        protected void attachBaseContext(Context newBase) {
-            super.attachBaseContext(new ELIContextWrapper(newBase, new ELIConfig.Builder()
-                    .addHook(new FontHook("fonts/my_default_font.ttf"))
-                    .build()));
-        }
+```java
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
     }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(new ELIContextWrapper(newBase, new ELIConfig.Builder()
+                .addHook(new FontHook("fonts/my_default_font.ttf"))
+                .build()));
+    }
+}
 ```
 
 ```xml
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Default. Should apply defaulted font" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Default. Should apply defaulted font" />
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Test 1 (Candy)"
-		app:font="fonts/candy.ttf" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Test 1 (Candy)"
+    app:font="fonts/candy.ttf" />
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Test 2 (Scriptina)"
-		app:font="fonts/scriptina.ttf" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Test 2 (Scriptina)"
+    app:font="fonts/scriptina.ttf" />
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="TextAppearance test"
-		android:textAppearance="@style/textStyleWithFont" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TextAppearance test"
+    android:textAppearance="@style/textStyleWithFont" />
 ```
 
 Weirdness, caveats and other peculiar behaviours
